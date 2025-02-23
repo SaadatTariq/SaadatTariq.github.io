@@ -75,6 +75,7 @@ header {
     background-color: #121212;
     color: #fff;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .hero-content {
@@ -154,8 +155,6 @@ header {
     vertical-align: middle;
 }
 
-
-
 /* Projects Section */
 #projects {
     padding: 80px 100px;
@@ -181,7 +180,7 @@ header {
 
 .project {
     background: #2c2c2c;
-    padding: 80px;
+    padding: 20px;
     width: 100%;
     max-width: 500px;
     border-radius: 8px;
@@ -229,7 +228,6 @@ header {
     transform: translateY(-10px);
     transition: 0.3s;
 }
-
 
 /* Experience Section */
 #experience {
@@ -283,43 +281,6 @@ header {
 #contact {
     padding: 80px 100px;
     background-color: #121212;
-}
-
-form input,
-form textarea {
-    width: 80%;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    background-color: #2c2c2c;
-    color: #fff;
-}
-
-form button {
-    padding: 12px 30px;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #c0392b;
-}
-
-/* Footer Section */
-footer {
-    background-color: #1f1f1f;
-    padding: 20px;
-    text-align: center;
-    color: #ccc;
-}
-/* Contact Section */
-#contact {
-    padding: 80px 100px;
-    background-color: #121212;
     text-align: center;
 }
 
@@ -353,4 +314,64 @@ form button {
 
 form button:hover {
     background-color: #c0392b;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust profile image size on mobile */
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .bio h2 {
+        font-size: 2.5em;
+    }
+
+    .bio h4 {
+        font-size: 1.5em;
+    }
+
+    .bio p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    /* Adjust project container for mobile */
+    .project-container {
+        grid-template-columns: 1fr; /* One project per row */
+    }
+
+    .project-img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* Adjust form fields */
+    form input,
+    form textarea {
+        width: 90%;
+    }
+
+    form button {
+        width: 90%;
+    }
 }
