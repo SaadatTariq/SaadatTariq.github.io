@@ -1,34 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Saadat Tariq | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <title>Home - Md Saadat Tariq</title>
-    <link rel="icon" href="MST.jpg" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div class="box">
-        <img src="profile.jpg" alt="" class="box-img" width="300" height="300">
-        <h1>
-            Welcome To My Page</h1>
-        <h5></h5>
-            Student - 3D Designer</h5>
-        <p>
-            Hi, I am <strong>Md Saadat Tariq</strong>, a second-year CS engineering student at North South University
-            Dhaka. This is my
-            portfolio website.</p>
-        <ul>
-            <li><a href="https://www.facebook.com/tariq.saadat.04" target="_blank"><i class="fa fa-facebook-square"
-                        aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/saadattariq_04" target="_blank"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/SaadatTariq" target="_blank"><i class="fa fa-github-square"
-                        aria-hidden="true"></i></a></li>
-        </ul>
+    <header>
+        <h2 class="logo"><span>M</span>ST</h2>
+        <nav class="navigation">
+            <a href="#hero">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn-talk">Let's Talk</a>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Md Saadat Tariq" class="profile-img">
+        </div>
+        <div class="bio">
+            <h2>Md Saadat Tariq</h2>
+            <h4>Final Year CS Engineering Student | Developer </h4>
+            <h4>President at North South University Communications Club</h4>
+            <p>I’m an enthusiastic Computer Science Engineering student with a passion for technology, design, and problem-solving. I am always excited to apply my knowledge in software development, AI, and web development to create impactful solutions.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/md-saadat-tariq/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/tariq.saadat.04" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/SaadatTariq" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
     </div>
+</section>
+
+
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <div class="project">
+            <img src="uno.png" alt="UNO Card" class="project-img"> <!-- Placeholder for UNO image -->
+            <h3>UNO Card Game</h3>
+            <p>Developed a Java-based single-player UNO game using JavaFX, featuring randomized cards and game logic.</p>
+            <a href="https://github.com/SaadatTariq" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="hms.png" alt="Hotel Management" class="project-img"> <!-- Placeholder for Hotel Management image -->
+            <h3>Hotel Management System</h3>
+            <p>Created a Hotel Management System using HTML, CSS for frontend design, and SQL for database management. Aimed to streamline hotel operations with robust features.</p>
+            <a href="https://github.com/SaadatTariq" target="_blank">View on GitHub</a>
+        </div>
+        <!-- Space for more projects, just replicate the 'project' div and add content -->
+    </div>
+</section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <!-- Job Experience -->
+            <div class="experience-item">
+                <img src="koncept-tech.gif" alt="Koncept Tech Logo" class="experience-img">
+                <h3>C & Python Instructor</h3>
+                <h3>Koncept Tech</h3> 
+                <p>Conducted programming classes for beginners, teaching C and Python to help students master foundational coding skills.</p>
+            </div>
+
+            <!-- Extracurricular Activity: President of NSU Communications Club -->
+            <div class="experience-item">
+                <img src="NSUCC White Logo.png" alt="NSU Communications Club Logo" class="experience-img">
+                <h3>President</h3>
+                <h3>North South University Communications Club</h3>
+                <p>Leading the Communications Club to enhance communication, leadership, and professional development for students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <div>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Md Saadat Tariq. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
