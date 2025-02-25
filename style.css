@@ -364,3 +364,11 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+#success-message {
+    display: none;
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
