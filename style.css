@@ -20,7 +20,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@ header {
 }
 
 .logo {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #fff;
     font-weight: 700;
 }
@@ -44,8 +44,6 @@ header {
     text-decoration: none;
     margin-right: 30px;
     font-weight: 500;
-    display: flex;
-    gap: 20px;
 }
 
 .navigation a:hover {
@@ -55,7 +53,7 @@ header {
 .btn-talk {
     color: #fff;
     text-decoration: none;
-    padding: 8px 20px;
+    padding: 8px 35px;
     background: #e74c3c;
     border-radius: 10px;
     border: 2px solid #e74c3c;
@@ -77,9 +75,6 @@ header {
     background-color: #121212;
     color: #fff;
     text-align: center;
-    flex-direction: column;
-    max-width: 1000px;
-    width: 100%;
 }
 
 .hero-content {
@@ -95,22 +90,22 @@ header {
 }
 
 .profile-img {
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
-    border: 5px solid #e74c3c;
-    object-fit: cover;
+    border: 6px solid #e74c3c; /* Red accent border */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    object-fit: cover; /* Ensure the image fills the circle */
 }
 
 .bio h2 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 700;
     margin-top: 10px;
 }
 
 .bio h4 {
-    font-size: 1em;
+    font-size: 1.8em;
     color: #ccc;
     margin-top: 10px;
 }
@@ -163,7 +158,7 @@ header {
 
 /* Projects Section */
 #projects {
-    padding: 60px 10%;
+    padding: 80px 100px;
     background-color: #121212;
     text-align: center;
 }
@@ -176,8 +171,7 @@ header {
 
 .project-container {
     display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    gap: 30px;
     justify-items: center;
     justify-content: center; /* Center the projects horizontally */
     max-width: 100%; /* Ensure the container uses full width */
@@ -216,8 +210,7 @@ header {
 
 /* UNO Card Image Size */
 .project-img {
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     height: auto;
     margin-bottom: 15px;
 }
@@ -241,7 +234,7 @@ header {
 
 /* Experience Section */
 #experience {
-    padding: 60px 10%;
+    padding: 80px 100px;
     background-color: #1f1f1f;
     text-align: center;
 }
@@ -254,16 +247,16 @@ header {
 
 .experience-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .experience-item {
     background: #2c2c2c;
     padding: 20px;
-    width: 100%;
-    max-width: 450px;
+    width: 45%;
+    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     color: #fff;
@@ -294,34 +287,27 @@ header {
 
 /* Contact Section */
 #contact {
-    padding: 60px 10%;
+    padding: 80px 100px;
     background-color: #121212;
-}
-
-form {
-    display: flex;
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center form elements */
-    gap: 15px; /* Space between form elements */
 }
 
 form input,
 form textarea {
-    width: 90%;
-    padding: 12px;
+    width: 80%;
+    padding: 15px;
     margin: 15px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid #ccc;
     background-color: #2c2c2c;
     color: #fff;
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: #e74c3c;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -343,26 +329,36 @@ footer {
     text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 5%;
-    }
-    
-    .navigation {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .hero-content {
-        flex-direction: column;
-    }
-    
-    .project-container {
-        grid-template-columns: 1fr;
-    }
+form {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center form elements */
+    gap: 20px; /* Space between form elements */
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+form button {
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 80%; /* Ensure the button is the same width as the input fields */
+}
+
+form button:hover {
+    background-color: #c0392b;
 }
 #success-message {
     display: none;
